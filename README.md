@@ -6,8 +6,8 @@
 ## Install
 
 ``` bash
-$ yarn global add roll
-$ npm install --global roll
+$ yarn global add @nothingrandom/roll
+$ npm install --global @nothingrandom/roll
 ```
 
 
