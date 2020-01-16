@@ -1,4 +1,4 @@
-# roll-it
+# roll
 
 > A dice roller / random number generator
 
@@ -6,8 +6,8 @@
 ## Install
 
 ``` bash
-$ yarn global add roll-it
-$ npm install --global roll-it
+$ yarn global add roll
+$ npm install --global roll
 ```
 
 

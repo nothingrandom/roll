@@ -1,5 +1,5 @@
 {
-  "name": "roll-it",
+  "name": "@nothingrandom/roll",
   "version": "1.0.0",
   "description": "A dice roller / random number generator",
   "main": "roll.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/nothingrandom/roll-it.git"
+    "url": "git+ssh://git@github.com/nothingrandom/roll.git"
   },
   "keywords": [
     "dice",
@@ -30,9 +30,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nothingrandom/roll-it/issues"
+    "url": "https://github.com/nothingrandom/roll/issues"
   },
-  "homepage": "https://github.com/nothingrandom/roll-it#readme",
+  "homepage": "https://github.com/nothingrandom/roll#readme",
   "dependencies": {
     "meow": "^6.0.0"
   }
