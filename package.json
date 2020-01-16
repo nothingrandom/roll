@@ -1,0 +1,39 @@
+{
+  "name": "roll-it",
+  "version": "1.0.0",
+  "description": "A dice roller / random number generator",
+  "main": "roll.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nothingrandom/roll-it.git"
+  },
+  "keywords": [
+    "dice",
+    "roll",
+    "random",
+    "cli",
+    "module"
+  ],
+  "author": {
+    "name": "Benjamin Hollway",
+    "email": "benjamin@nothingrandom.com",
+    "url": "nothingrandom.com"
+  },
+  "bin": {
+    "roll": "cli.js"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nothingrandom/roll-it/issues"
+  },
+  "homepage": "https://github.com/nothingrandom/roll-it#readme",
+  "dependencies": {
+    "meow": "^6.0.0"
+  }
+}
