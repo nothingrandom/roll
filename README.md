@@ -11,7 +11,7 @@ $ npm install --global @nothingrandom/roll
 ```
 
 
-## Usage
+## Usage (CLI)
 
 ``` bash
 $ roll --help
@@ -28,6 +28,14 @@ $ roll --help
 
     $ roll 2d20+d3 # rolls two dice with 20 sides and one die with 3 sides
     3 - 43
+```
+
+## Usage (require in JS)
+``` js
+const Roll = require('@nothingrandom/roll');
+const roll = new Roll();
+
+roll.roll('2d20').result;
 ```
 
 ## License

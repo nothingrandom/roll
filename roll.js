@@ -1,4 +1,4 @@
-const regex = /^(\d*)d(\d+|\%)(([\+\-\/\*bw])(\d+))?(([\+\-\/\*])(\d+|(\d*)d(\d+|\%)(([\+\-\/\*bw])(\d+))?))*$/;
+const regex = /^(\d*)d(\d+|%)(([+-/*bw])(\d+))?(([+-/*])(\d+|(\d*)d(\d+|%)(([+\-/*bw])(\d+))?))*$/;
 const min = 1; // minimum number of sides on a dice
 
 class roll {
@@ -16,9 +16,8 @@ class roll {
       throw new Error(`${s} is an invalid dice roll!`);
     }
 
-
     const dice = [];
-    const segments = s.split(/[\+\-]/);
+    const segments = s.split(/[+-]/);
 
     segments.forEach((segment) => {
       const match = regex.exec(segment);
@@ -40,21 +39,22 @@ class roll {
     dice.forEach((diceSet) => {
       const diceSetRolled = [];
       while (diceSetRolled.length < diceSet.quantity) {
-        diceSetRolled.push(
-          Math.floor(this.random() * (diceSet.sides - min + 1) + min),
-        );
+        diceSetRolled.push((Math.floor(this.random() * (diceSet.sides - min + 1)) + min));
       }
       rolled.push(...diceSetRolled);
     });
 
     const reducer = (acc, cur) => acc + cur;
     const result = rolled.reduce(reducer);
+    const average = result / rolled.length;
 
     return {
       rolled,
+      average,
       result,
     };
   }
 }
 
 module.exports = roll;
+module.exports.Regex = regex;

@@ -20,8 +20,15 @@ const cli = meow(`
 const roll = new Roll();
 
 if (cli.input.length === 0) {
-  console.error('Please specify a dice to roll');
+  console.error('Please specify a dice to roll.');
   process.exit(1);
 }
 
-console.log(roll.roll(cli.input[0]).result);
+try {
+  console.log(roll.roll(cli.input[0]).result);
+  console.log(roll.roll(cli.input[0]).rolled);
+  process.exit(0);
+} catch (error) {
+  console.error(error.message);
+  process.exit(1);
+}
