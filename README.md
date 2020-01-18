@@ -1,7 +1,6 @@
 # roll
-
+![Travis (.com)](https://img.shields.io/travis/com/nothingrandom/roll)
 > A dice roller / random number generator
-
 
 ## Install
 
