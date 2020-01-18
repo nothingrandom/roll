@@ -43,4 +43,3 @@ test('format parsed', (t) => {
 
   t.deepEqual(parsedResult, expectedFormat);
 });
-
