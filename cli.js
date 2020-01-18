@@ -25,8 +25,11 @@ if (cli.input.length === 0) {
 }
 
 try {
-  console.log(roll.roll(cli.input[0]).result);
-  console.log(roll.roll(cli.input[0]).rolled);
+  const rolled = roll.roll(cli.input[0]);
+  console.log(`Result: ${rolled.result}`);
+  if (rolled.rolled.length > 1) {
+    console.log(`Each die: ${rolled.rolled}`);
+  }
   process.exit(0);
 } catch (error) {
   console.error(error.message);

@@ -1,6 +1,6 @@
 {
   "name": "@nothingrandom/roll",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A dice roller / random number generator",
   "main": "roll.js",
   "scripts": {
