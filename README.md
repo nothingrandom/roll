@@ -35,6 +35,13 @@ const Roll = require('@nothingrandom/roll');
 const roll = new Roll();
 
 roll.roll('2d20').result;
+
+// roll.roll(INPUT) will return
+// {
+//   rolled: number,
+//   average: number[],
+//   result: number,
+// }
 ```
 
 ## License

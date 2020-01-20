@@ -1,6 +1,6 @@
 {
   "name": "@nothingrandom/roll",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A dice roller / random number generator",
   "main": "roll.js",
   "scripts": {
@@ -39,11 +39,11 @@
     ]
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^14.0.0",
     "meow": "^6.0.0"
   },
   "devDependencies": {
     "ava": "^2.4.0",
-    "xo": "^0.25.3"
+    "xo": "^0.25.3",
+    "eslint-config-airbnb-base": "^14.0.0"
   }
 }
