@@ -45,4 +45,4 @@ roll.roll('2d20').result;
 ```
 
 ## License
-MIT © [Benjamin Hollway](https://nothingrandom.com)
+MIT © [Benjamin Grant](https://nothingrandom.com)
